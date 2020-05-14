@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+    <title>APSOLU | Page technique du projet APSOLU.</title>
+    <meta name="description" content="Page technique du projet APSOLU.">
+    <link rel="canonical" href="https://www.apsolu.fr">
+</head>
+<body>
+    <!-- HEADER. -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+            <a id="forkme_banner" href="https://github.com/apsolu">Voir sur GitHub</a>
+            <h1 id="project_title">APSOLU</h1>
+            <h2 id="project_tagline">Collection de plugins Moodle pour gérer les inscriptions d'un service des sports universitaire.</h2>
+        </header>
+    </div>
+
+    <!-- GRID; -->
+    <div id="content">
+        <div id="grid">
+            <!-- SUMMARY. -->
+            <div id="summary_wrap">
+                <section id="summary">
+                    <ol>
+                        <li><a href="#description">Description</a>
+                        <li><a href="#description-plugins">Description des plugins</a>
+                            <ol>
+                                <li><a href="#block_apsolu_course">block_apsolu_course</a></li>
+                                <li><a href="#block_apsolu_dashboard">block_apsolu_dashboard</a></li>
+                                <li><a href="#enrol_select">enrol_select</a></li>
+                                <li><a href="#local_apsolu">local_apsolu</a></li>
+                                <li><a href="#theme_apsolu">theme_apsolu</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#configuration">Configuration</a></li>
+                    </ol>
+                </section>
+            </div>
+
+            <!-- MAIN CONTENT. -->
+            <div id="main_content_wrap">
+                <section id="main_content">
+                    <h1 id="description">Description</h1>
+                    <p>APSOLU est une collection de plugins PHP pour le logiciel <a href="https://moodle.org">Moodle</a> permettant de gérer les inscriptions d'un service des sports universitaire.</p>
+                    <p>Vous pouvez trouvez plus d'informations sur le fonctionnement d'APSOLU sur le site <a href="https://www.apsolu.fr">apsolu.fr.</a>.</p>
+                    <p><strong><u>Note :</u> le <span style="color: red;">plugin <em>local_apsolu</em> n'est pas encore publié sur github</span>. Il devrait être disponible très prochainement.</strong></p>
+                </section>
+                <section id="main_content">
+                    <h1 id="description-plugins">Description des plugins</h1>
+                    <h2 id="block_apsolu_course">block_apsolu_course</h2>
+                    <p>Ce bloc de cours permettant de voir ses propres présences pour un étudiant et les présences générales pour un enseignant.</p>
+                    <p>Il est ajouté automatiquement pour tous les créneaux créés.</p>
+
+                    <h2 id="block_apsolu_dashboard">block_apsolu_dashboard</h2>
+                    <p>Ce bloc de tableau de bord permet de regrouper par onglet toutes les informations essentielles pour les étudiants.</p>
+                    <ol>
+                        <li>permets de voir les sessions de cours à venir</li>
+                        <li>permets d'afficher les inscriptions en cours</li>
+                        <li>permets de voir les paiements effectués ou dûs</li>
+                        <li>permets aux enseignants afin d'accéder aux méthodes de gestion des inscriptions</li>
+                        <li>permets aux enseignants de générer une liste des étudiants par cours, une liste des étudiants inscrits FFSU et de saisir des notes</li>
+                    </ol>
+
+                    <h2 id="enrol_select">enrol_select</h2>
+                    <p>Une méthode d'inscription permettant de proposer une liste de cours aux étudiants avec des quotas.</p>
+
+                    <h2 id="local_apsolu">local_apsolu</h2>
+                    <p>Le module principal d'APSOLU permettant de gérer l'offre de formations, les sessions, les calendriers, les paiements via paybox, etc.</p>
+
+                    <h2 id="theme_apsolu">theme_apsolu</h2>
+                    <p>Un thème basé sur le thème <em>classic</em> de Moodle. Ce thème ajoute un profil utilisateur amélioré en intégrant des informations spécifiques à APSOLU.</p>
+
+                    <h1 id="installation">Installation</h1>
+                    <p>La collection de plugins APSOLU fonctionne et est testée uniquement avec <strong>Moodle 3.7</strong>.</p>
+                    <pre class="highlight">
+                        <code>
+<span class="c1"># Télécharge Moodle 3.7.</span>
+<span class="nf">git clone --branch=MOODLE_37_STABLE</span> <span class="no">git://git.moodle.org/moodle.git</span> <span class="k">./moodle</span>
+
+<span class="c1"># Télécharge les blocs d'affichage.</span>
+<span class="nf">git clone</span> <a class="no" href="https://github.com/apsolu/block_apsolu_course">https://github.com/apsolu/block_apsolu_course.git</a> <span class="k">./moodle/blocks/apsolu_course</span>
+<span class="nf">git clone</span> <a class="no" href="https://github.com/apsolu/block_apsolu_dashboard">https://github.com/apsolu/block_apsolu_dashboard.git</a> <span class="k">./moodle/blocks/apsolu_dashboard</span>
+
+<span class="c1"># Télécharge le module de gestion des inscriptions.</span>
+<span class="nf">git clone</span> <a class="no" href="https://github.com/apsolu/enrol_select">https://github.com/apsolu/enrol_select.git</a> <span class="k">./moodle/enrol/select</span>
+
+<span class="c1"># Télécharge le plugin principal.</span>
+<span class="nf">git clone</span> <span class="no">https://github.com/apsolu/local_apsolu.git</span> <span class="k">./moodle/local/apsolu</span>
+
+<span class="c1"># Télécharge le thème APSOLU (facultatif ; devrait pouvoir fonctionner sans).</span>
+<span class="nf">git clone</span> <a class="no" href="https://github.com/apsolu/theme_apsolu">https://github.com/apsolu/theme_apsolu.git</a> <span class="k">./moodle/theme/apsolu</span>
+                        </code>
+                    </pre>
+
+                    <h1 id="configuration">Configuration</h1>
+                    <p>à venir...</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER. -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+            <p class="copyright">Thème basé sur <a href="https://github.com/pages-themes" lang="en">Slate theme</a>.</p>
+            <p>Publié avec <a href="https://pages.github.com/" lang="en">GitHub Pages</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
