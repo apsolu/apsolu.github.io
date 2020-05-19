@@ -29,6 +29,7 @@
                 <section id="summary">
                     <ol>
                         <li><a href="#description">Description</a>
+                        <li><a href="#prerequis">Prérequis</a>
                         <li><a href="#description-plugins">Description des plugins</a>
                             <ol>
                                 <li><a href="#block_apsolu_course">block_apsolu_course</a></li>
@@ -52,8 +53,15 @@
                     <p>APSOLU est une collection de plugins PHP pour le logiciel <a href="https://moodle.org">Moodle</a> permettant de gérer les inscriptions d'un service des sports universitaire.</p>
                     <p>Vous pouvez trouvez plus d'informations sur le fonctionnement d'APSOLU sur le site <a href="https://www.apsolu.fr">apsolu.fr.</a>.</p>
                     <p><strong><u>Note :</u> le <span style="color: red;">plugin <em>local_apsolu</em> n'est pas encore publié sur github</span>. Il devrait être disponible très prochainement.</strong></p>
-                </section>
-                <section id="main_content">
+
+                    <h1 id="prerequis">Prérequis techniques</h1>
+                    <ul>
+                        <li><em>Moodle 3.7.x</em></li>
+                        <li><em>PHP 7.1, 7.2 ou 7.3</em></li>
+                        <li><em>MariaDB &ge; 5.5.31</em></li>
+                    </ul>
+                    <p>Note: utiliser <em>MySQL &ge; 5.6</em> devrait fonctionner. Les plugins n'ont pas été encore testé avec <em>PostgreSQL &ge; 9.4</em>.</p>
+
                     <h1 id="description-plugins">Description des plugins</h1>
                     <h2 id="block_apsolu_course">Module block_apsolu_course</h2>
                     <p>Ce bloc de cours permet de voir l'assiduité à un cours (ses propres présences pour un étudiant et les présences générales pour un enseignant).</p>
@@ -96,10 +104,10 @@
                     <p>Un thème basé sur le thème <em>classic</em> de Moodle. Ce thème ajoute un profil utilisateur amélioré en intégrant des informations spécifiques à APSOLU.</p>
 
                     <h1 id="installation">Installation</h1>
-                    <p>La collection de plugins APSOLU fonctionne et est testée uniquement avec <strong>Moodle 3.7</strong>.</p>
+                    <p>La collection de plugins APSOLU fonctionne et est testée uniquement avec <strong>Moodle 3.7.x</strong>.</p>
                     <pre class="highlight">
                         <code>
-<span class="c1"># Télécharge Moodle 3.7.</span>
+<span class="c1"># Télécharge la dernière version stable Moodle de la branche 3.7.x.</span>
 <span class="nf">git clone --branch=MOODLE_37_STABLE</span> <span class="no">git://git.moodle.org/moodle.git</span> <span class="k">./moodle</span>
 
 <span class="c1"># Télécharge les blocs d'affichage.</span>
