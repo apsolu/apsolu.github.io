@@ -355,7 +355,7 @@ footer p {
 }
 
 a {
-    color: #0F79D0;
+    color: #2574a9;
     text-shadow: none;
     transition: color 0.5s ease;
     transition: text-shadow 0.5s ease;
@@ -382,6 +382,14 @@ footer a {
 em,
 cite {
     font-style: italic;
+}
+
+em {
+    color: #8e44ad;
+}
+
+.important {
+    color: #b22222;
 }
 
 strong {
@@ -527,7 +535,7 @@ form {
     z-index: 10;
     padding: 10px 50px 10px 10px;
     color: #fff;
-    background: url("//pages-themes.github.io/slate/assets/images/blacktocat.png") #0090ff no-repeat 95% 50%;
+    background: url("//pages-themes.github.io/slate/assets/images/blacktocat.png") #3455db no-repeat 95% 50%;
     font-weight: 700;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-bottom-left-radius: 2px;
