@@ -126,7 +126,43 @@
                     </pre>
 
                     <h1 id="configuration">Configuration</h1>
-                    <p>à venir...</p>
+                    <h2>Page d'accueil</h2>
+                    <p>Si vous utilisez le thème apsolu :</p>
+                    <pre class="highlight">
+                        <code>
+<span class="c1">// Ajouter les valeurs suivantes dans le fichier config.php de Moodle.</span>
+<span class="nf">$CFG-&gt;</span>theme = <span class="no">'apsolu'</span>;
+<span class="nf">$CFG-&gt;</span>customfrontpageinclude = __DIR__.<span class="no">'/theme/apsolu/index.php'</span>;
+<span class="nf">$CFG-&gt;</span>frontpage = '';
+<span class="nf">$CFG-&gt;</span>frontpageloggedin = '';
+                        </code>
+                    </pre>
+
+                    <h2>Mon tableau de bord</h2>
+                    <p>Il faut configurer le tableau de bord des utilisateurs afin d'afficher le bloc <em>apsolu_dashboard</em> via le menu :</p>
+                    <ol>
+                        <li>Administration du site</li>
+                        <li>Présentation</li>
+                        <li>Tableau de bord par défaut</li>
+                    </ol>
+                    <p>Puis le bouton <em>Activer l'édition des blocs</em> et ajouter le bloc <em>APSOLU: Tableau de bord</em>.</p>
+
+                    <h2>Rôles</h2>
+                    <p>APSOLU nécessite la création de 3 rôles basés sur le modèle étudiant de Moodle via le menu :</p>
+                    <ol>
+                        <li>Administration du site</li>
+                        <li>Utilisateurs</li>
+                        <li>Permissions</li>
+                        <li>Définition des rôles</li>
+                    </ol>
+                    <p>Puis le bouton <em>Ajouter un nouveau rôle</em>.</p>
+
+                    <p>Il faut créer dans l'ordre :</p>
+                    <ol>
+                        <li>un rôle basé sur le modèle étudiant dont le nom abrégé est <em>option</em></li>
+                        <li>un rôle basé sur le modèle étudiant dont le nom abrégé est <em>bonification</em></li>
+                        <li>un rôle basé sur le modèle étudiant dont le nom abrégé est <em>libre</em></li>
+                    </ol>
 
                     <h1 id="communaute">Communauté APSOLU</h1>
                     <iframe allowfullscreen="true" src="//umap.openstreetmap.fr/fr/map/la-communaute-apsolu_447467?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=true&amp;tilelayersControl=null&amp;embedControl=true&amp;datalayersControl=true&amp;onLoadPanel=caption&amp;captionBar=false&amp;datalayers=1248657%2C1248482%2C1248452" width="100%" height="450px" frameborder="0"></iframe>
