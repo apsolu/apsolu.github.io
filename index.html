@@ -56,11 +56,11 @@
 
                     <h1 id="prerequis">Prérequis techniques</h1>
                     <ul>
-                        <li><em>Moodle 3.7.x</em></li>
-                        <li><em>PHP 7.1, 7.2 ou 7.3</em></li>
-                        <li><em>MariaDB &ge; 5.5.31</em></li>
+                        <li><em>Moodle 3.9.x</em></li>
+                        <li><em>PHP 7.2, 7.3 ou 7.4</em></li>
+                        <li><em>MariaDB &ge; 10.2.29</em></li>
                     </ul>
-                    <p>Note: utiliser <em>MySQL &ge; 5.6</em> devrait fonctionner. Les plugins n'ont pas été encore testé avec <em>PostgreSQL &ge; 9.4</em>.</p>
+                    <p>Note: utiliser <em>MySQL &ge; 5.6</em> devrait fonctionner. Les plugins n'ont pas été encore testés avec <em>PostgreSQL &ge; 9.5</em>.</p>
 
                     <h1 id="description-plugins">Description des plugins</h1>
                     <h2 id="block_apsolu_course">Module block_apsolu_course</h2>
@@ -104,11 +104,11 @@
                     <p>Un thème basé sur le thème <em>classic</em> de Moodle. Ce thème ajoute un profil utilisateur amélioré en intégrant des informations spécifiques à APSOLU.</p>
 
                     <h1 id="installation">Installation</h1>
-                    <p>La collection de plugins APSOLU fonctionne et est testée uniquement avec <strong>Moodle 3.7.x</strong>.</p>
+                    <p>La collection de plugins APSOLU fonctionne et est testée uniquement avec <strong>Moodle 3.9.x</strong>.</p>
                     <pre class="highlight">
                         <code>
-<span class="c1"># Télécharge la dernière version stable Moodle de la branche 3.7.x.</span>
-<span class="nf">git clone --branch=MOODLE_37_STABLE</span> <span class="no">git://git.moodle.org/moodle.git</span> <span class="k">./moodle</span>
+<span class="c1"># Télécharge la dernière version stable Moodle de la branche 3.9.x.</span>
+<span class="nf">git clone --branch=MOODLE_39_STABLE</span> <span class="no">git://git.moodle.org/moodle.git</span> <span class="k">./moodle</span>
 
 <span class="c1"># Télécharge les blocs d'affichage.</span>
 <span class="nf">git clone</span> <a class="no" href="https://github.com/apsolu/block_apsolu_course">https://github.com/apsolu/block_apsolu_course.git</a> <span class="k">./moodle/blocks/apsolu_course</span>
