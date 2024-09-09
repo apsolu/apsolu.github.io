@@ -60,12 +60,12 @@
 
                     <h1 id="prerequis">Prérequis techniques</h1>
                     <ul>
-                        <li><em>Moodle 4.1.x</em></li>
-                        <li><em>PHP 7.4, 8.0 ou 8.1</em></li>
-                        <li><em>MariaDB &ge; 10.4</em></li>
+                        <li><em>Moodle 4.4.x</em></li>
+                        <li><em>PHP 8.1 ou 8.2</em></li>
+                        <li><em>MariaDB &ge; 10.6.7</em></li>
                     </ul>
-                    <p>Note: utiliser <em>MySQL &ge; 5.7</em> devrait fonctionner. Les plugins n'ont pas été encore testés avec <em>PostgreSQL &ge; 12</em>.</p>
-                    <p>Les prérequis ci-dessus sont repris du <a href="https://moodledev.io/general/releases/4.1">guide d'installation officiel de Moodle 4.1</a>.</p>
+                    <p>Note: utiliser <em>MySQL &ge; 8.0</em> devrait fonctionner. Les plugins n'ont pas été encore testés avec <em>PostgreSQL &ge; 13</em>.</p>
+                    <p>Les prérequis ci-dessus sont repris du <a href="https://moodledev.io/general/releases/4.4">guide d'installation officiel de Moodle 4.4</a>.</p>
 
                     <h1 id="description-plugins">Description des plugins</h1>
                     <h2 id="block_apsolu_course">Module block_apsolu_course</h2>
@@ -109,11 +109,11 @@
                     <p>Un thème basé sur le thème <em>boost</em> de Moodle. Ce thème ajoute un profil utilisateur amélioré en intégrant des informations spécifiques à APSOLU.</p>
 
                     <h1 id="installation">Installation</h1>
-                    <p>La collection de plugins APSOLU fonctionne et est testée uniquement avec <strong>Moodle 4.1.x</strong>.</p>
+                    <p>La collection de plugins APSOLU fonctionne et est testée uniquement avec <strong>Moodle 4.4.x</strong>.</p>
                     <pre class="highlight">
                         <code>
-<span class="c1"># Télécharge la dernière version stable Moodle de la branche 4.1.x.</span>
-<span class="nf">git clone --branch=MOODLE_401_STABLE</span> <span class="no">git://git.moodle.org/moodle.git</span> <span class="k">./moodle</span>
+<span class="c1"># Télécharge la dernière version stable Moodle de la branche 4.4.x.</span>
+<span class="nf">git clone --branch=MOODLE_404_STABLE</span> <span class="no">git://git.moodle.org/moodle.git</span> <span class="k">./moodle</span>
 
 <span class="c1"># Télécharge les blocs d'affichage.</span>
 <span class="nf">git clone</span> <a class="no" href="https://github.com/apsolu/block_apsolu_course">https://github.com/apsolu/block_apsolu_course.git</a> <span class="k">./moodle/blocks/apsolu_course</span>
